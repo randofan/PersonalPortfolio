@@ -1,0 +1,45 @@
+@import 'variables.css';
+
+.primary {
+    color: var(--primary-color);
+}
+
+.home {
+    background-color: var(--c1);
+}
+
+.about {
+    background-color: var(--c2);
+}
+
+.blog, .c3 {
+    background-color: var(--c3);
+}
+
+.projects {
+    background-color: var(--c4);
+}
+
+.contact {
+    background-color: var(--c5);
+}
+
+.c1 {
+    fill: var(--c1);
+}
+
+.c2 {
+    fill: var(--c2);
+}
+
+.c3 {
+    fill: var(--c3);
+}
+
+.c4 {
+    fill: var(--c4);
+}
+
+.c5 {
+    fill: var(--c5);
+}

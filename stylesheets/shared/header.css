@@ -1,0 +1,61 @@
+@import 'variables.css';
+
+:root {
+    --starting-filters: grayscale(100%) brightness(200%);
+}
+
+.navbar {
+    overflow-x: visible;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: var(--header-color);
+    z-index: 99;
+    box-shadow: 4px 0 10px -3px #010101;
+}
+
+.item {
+    width: var(--width);
+    height: var(--width);
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.item svg {
+    fill: var(--primary-color);
+    filter: var(--starting-filters);
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.item span {
+    color: var(--primary-color);
+    filter: var(--starting-filters);
+}
+
+.item:hover {
+    filter: brightness(85%);
+}
+
+.item:hover svg, .item:hover span {
+    filter: grayscale(0%);
+}
+
+.item:first-child {
+    background-color: var(--primary-color);
+}
+
+.item:first-child svg {
+    fill: white;
+}
+
+.item:first-child span {
+    color: white;
+}

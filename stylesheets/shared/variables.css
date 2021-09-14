@@ -1,0 +1,23 @@
+:root {
+    --background-color: #191817;
+    --header-color: #282725;
+    --primary-color: #F13030;
+    --primary-text-color: white;
+    --width: 4.6rem;
+
+    --original-c1: #212738;
+    --original-c2: #4B4E6D;
+    --original-c3: #435058;
+    --original-c4: #564154;
+    --original-c5: #1A535C;
+    
+    --original-c1-secondary: #242a3d;
+
+    --c1: var(--original-c1);
+    --c2: var(--original-c2);
+    --c3: var(--original-c3);
+    --c4: var(--original-c4);
+    --c5: var(--original-c5);
+
+    --c1-secondary: var(--original-c1-secondary);
+}

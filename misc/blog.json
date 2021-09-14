@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "date": "8/25/2021",
+            "title": "my first blog post",
+            "content": "Hey everyone! For this new website, I've decided to build everything from the ground up using Node.js and Express. The reason why I've decided to make this website is to become more accustomed to front end web development. For that reason, I've decided to forgo any CSS frameworks so all the CSS for this website has been written by myself! <br>In the future, I'll be adding more projects for ya'll to play around with; so far, my plans consist of making online game solvers (Word Hunt Solver, Sudoku Solver, etc). <br>If you have any questions, please use the <a href=\"#contact\" class=\"primary\">Contact Form</a> to get in touch.",
+            "signature": "Thanks,<br class=\"no-space\">David"
+        },
+        {
+            "date": "9/12/2021",
+            "title": "making some adjustments",
+            "content": "Welcome back! I've been hard at work the past few days, though it may not seem like it first glace. One of the major things I've changed is that I've shifted from a dynamic website to a Single Page App (SPA); my reasoning behind this decision was that my website really doesn't need to dynamically update for the user. It also makes deploying the website much easier which is a definite plus! Another change I've worked on is moving these blog posts onto a JSON format, so the HTML is automatically generated for each post based on the JSON template.<br>Looking to the future, I'm nearly finished with a Word Hunt Solver JavaScript app, so look forward to that :)",
+            "signature": "I hope you have a wonderful day,<br class=\"no-space\">David"
+        }
+    ]
+}

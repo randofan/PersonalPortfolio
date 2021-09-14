@@ -1,0 +1,84 @@
+@import 'variables.css';
+
+
+.home-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.home-curve svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 58px;
+}
+
+.home-curve .shape-fill {
+    fill: var(--c1);
+}
+
+.about-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.about-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+}
+
+.about-curve .shape-fill {
+    fill: var(--c2);
+}
+
+.blog-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.blog-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+.blog-curve .shape-fill {
+    fill: var(--c3);
+}
+
+.projects-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.projects-curve svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 46px;
+    transform: rotateY(180deg);
+}
+
+.projects-curve .shape-fill {
+    fill: var(--c4);
+}

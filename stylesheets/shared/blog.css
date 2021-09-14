@@ -1,0 +1,53 @@
+@import 'variables.css';
+
+.blog-list-item {
+    list-style: none;
+    margin-bottom: 5rem;
+    margin-bottom: 0;
+}
+
+#blog-list {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#posts {
+    position: relative;
+}
+
+.blog-container svg {
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    width: 100%;
+}
+
+.blog-container svg rect {
+    display: block;
+    height: 150px;
+}
+
+.read-more button {
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 0;
+    font-size: 16px;
+}
+
+#first-stop {
+    stop-color: var(--c3);
+    stop-opacity: 1;
+}
+
+#second-stop {
+    stop-color: var(--c3);
+    stop-opacity: 0;
+}

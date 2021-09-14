@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Prototype';
+    src: url('/fonts/Prototype.woff2') format('woff2'),
+        url('/fonts/Prototype.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* NOT IN USE CURRENTLY */

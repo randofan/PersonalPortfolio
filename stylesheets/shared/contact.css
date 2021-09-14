@@ -1,0 +1,51 @@
+.contact-page {
+    display: grid;
+    height: 20rem;
+    width: max-content;
+    grid-template-columns: repeat(6, 12vw);
+    grid-template-rows: repeat(5, 1fr) 0.7fr;
+    justify-content: start;
+    gap: 0.75rem;
+}
+
+.name {
+    grid-column: 1 / 4;
+}
+
+.email {
+    grid-column: 4 / 7;
+}
+
+.subject {
+    grid-column: 1 / -1;
+}
+
+.message {
+    grid-column: 1 / -1;
+    grid-row: 3 / 6;
+}
+
+/* this shit looks ugly as fuck */
+.confirmation {
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-color: #4794b7;
+    margin-bottom: 1rem;
+}
+
+.confirmation p {
+    padding: 0;
+    margin: 0.25rem 0.5rem;
+}
+
+@media only screen and (max-width: 660px) {
+    .submit {
+        grid-column: 5 / 7;
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .submit {
+        grid-column: 6 / 7;
+    }
+}
