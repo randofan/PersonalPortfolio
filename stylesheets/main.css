@@ -61,20 +61,24 @@
     main {
         margin-left: 0rem;
         margin-bottom: var(--width);
+        overflow-x: hidden;
     }
 
     section {
         padding-left: 1rem;
         padding-right: 1rem;
+        overflow-x: hidden;
     }
 
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
+        overflow-x: hidden;
     }
 
     .blob-motion {
         transform: translateX(-25%) translateY(-75%);
+        overflow-x: hidden;
     }
 
     /* header */
