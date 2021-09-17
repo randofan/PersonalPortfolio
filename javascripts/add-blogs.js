@@ -7,6 +7,7 @@ list.id = 'blog-list'
 
 const app = document.querySelector('#posts');
 
+let isFirst = true
 fetch("/misc/blog.json")
     .then(response => response.json())
     .then(json => json.posts)
@@ -33,28 +34,26 @@ fetch("/misc/blog.json")
         li.appendChild(content)
         li.appendChild(signature)
 
-        storage.appendChild(li)
+        if (isFirst === true) {
+            list.appendChild(li)
+            storage.appendChild(li.cloneNode(true))
+            isFirst = false
+        }
+        else {
+            storage.appendChild(li)
+        }
     }))
 
-// TODO Question: js change the parent of a child dom node
-// for (let i = 0; i < 2.; i++) {
-//     list.appendChild(storage.childNodes[i]) // not a node but storage.childNodes is a NodeList??
-// }
-// app.appendChild(list);
-app.appendChild(storage);
+app.appendChild(list);
 
 readMore.addEventListener('click', () => {
     if(readMore.textContent.includes('More')) { // if it is read more
-        // for (let i = 2; i < blogPosts.length; i++) {
-        //     list.appendChild(blogPosts[i])
-        // }
+        app.replaceChild(storage, list)
         fade.style.filter = 'opacity(0)'
         readMore.innerHTML = '&#9650<br class="no-space">Read Less'
     }
     else { // if it is read less
-        // for (let i = 2; i < blogPosts.length; i++) {
-        //     list.removeChild(blogPosts[i])
-        // }
+        app.replaceChild(list, storage)
         fade.style.removeProperty('filter')
         readMore.innerHTML = 'Read More<br class="no-space">&#9660'
     }
