@@ -1,5 +1,6 @@
 const list = document.createElement('ul');
 const storage = document.createElement('ul')
+storage.style.padding = 0
 const readMore = document.getElementById('read-more-btn')
 const fade = document.getElementById('fade')
 list.id = 'blog-list'
@@ -35,6 +36,7 @@ fetch("/misc/blog.json")
         storage.appendChild(li)
     }))
 
+// TODO Question: js change the parent of a child dom node
 // for (let i = 0; i < 2.; i++) {
 //     list.appendChild(storage.childNodes[i]) // not a node but storage.childNodes is a NodeList??
 // }

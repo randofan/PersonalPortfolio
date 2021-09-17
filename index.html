@@ -58,17 +58,25 @@
 
     <main>
         <section class="home" id="home">
-            <div class="container">
-                <h1 style="margin-bottom: 5rem;">Welcome to my website!</h1>
-                <div class="color-container">
-                    <svg><rect class="c1"></svg>
-                    <svg><rect class="c2"></svg>
-                    <svg><rect class="c3"></svg>
-                    <svg><rect class="c4"></svg>
-                    <svg><rect class="c5"></svg>
+            <div style="z-index: 2; position: relative;">
+                <div class="header-container">
+                    <h1><span>H</span><span>e</span><span>l</span><span>l</span><span>o</span> <span>T</span><span>h</span><span>e</span><span>r</span><span>e</span>,</h1>
+                    <h2>I'm <span>David</span></h2>
                 </div>
-                <button id="randomize" class="btn" style="margin-bottom: 0.5rem;">Randomize Colors</button>
-                <button id="reset" class="btn">Reset Colors</button>
+                <div class="big-color-container">
+                    <div class="color-container">
+                        <svg><rect class="c1"></svg>
+                        <svg><rect class="c2"></svg>
+                        <svg><rect class="c3"></svg>
+                        <svg><rect class="c4"></svg>
+                        <svg><rect class="c5"></svg>
+                    </div>
+                    <div class="color-buttons">
+                        <button id="randomize" class="btn">Add a Little Color</button>
+                        <p>|</p>
+                        <button id="reset" class="btn">Reset</button>
+                    </div>
+                </div>
             </div>
             <div class="blob">
                 <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600"
@@ -172,6 +180,47 @@
             </div>
             <div class="container" id="projects">
                 <h1>Projects</h1>
+                <h2>Word Hunt Solver</h2>
+                <div class="projects-container">
+                    <div class="instructions">
+                        <h3>Instructions:</h3>
+                        <p style="margin-top: 0;">Enter the letters into the text box below from left to right, top to bottom (As seen in the example). Once your done, press submit. The process will take a while so please be patient.</p>
+                        <div class="input-container">
+                            <input type="text" name="test" value="abcdefghijklmnop">
+                            <div id="loader"></div>
+                        </div>
+                        <button id="submit">Submit</button>
+                        <p id="output"></p>
+                    </div>
+                    <div class="graphic">
+                        <h3>Example:</h3>
+                        <div class="row">
+                            <svg><foreignObject><div>A</div></foreignObject></svg>
+                            <svg><foreignObject><div>B</div></foreignObject></svg>
+                            <svg><foreignObject><div>C</div></foreignObject></svg>
+                            <svg><foreignObject><div>D</div></foreignObject></svg>
+                        </div>
+                        <div class="row">
+                            <svg><foreignObject><div>E</div></foreignObject></svg>
+                            <svg><foreignObject><div>F</div></foreignObject></svg>
+                            <svg><foreignObject><div>G</div></foreignObject></svg>
+                            <svg><foreignObject><div>H</div></foreignObject></svg>
+                        </div>
+                        <div class="row">
+                            <svg><foreignObject><div>I</div></foreignObject></svg>
+                            <svg><foreignObject><div>J</div></foreignObject></svg>
+                            <svg><foreignObject><div>K</div></foreignObject></svg>
+                            <svg><foreignObject><div>L</div></foreignObject></svg>
+                        </div>
+                        <div class="row">
+                            <svg><foreignObject><div>M</div></foreignObject></svg>
+                            <svg><foreignObject><div>N</div></foreignObject></svg>
+                            <svg><foreignObject><div>O</div></foreignObject></svg>
+                            <svg><foreignObject><div>P</div></foreignObject></svg>
+                        </div>
+                        <p><b>Input:</b> abcdefghijklmnop</p>
+                    </div>
+                </div>
             </div>
         </section>
     
@@ -231,6 +280,7 @@
         <script src="javascripts/background-color.js"></script>
         <script src="javascripts/blob-animation.js"></script>
         <script src="javascripts/add-blogs.js"></script>
+        <script src="javascripts/word-hunt-solver.js"></script>
     </main>
 </body>
 

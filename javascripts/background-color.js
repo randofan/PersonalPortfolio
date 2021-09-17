@@ -15,7 +15,7 @@ button.addEventListener('click', () => {
 
 reset.addEventListener('click', () => {
     for (let i = 1; i < 6; i++) {
-        r.style.setProperty(`--c${i}`, rs.getPropertyValue(`--original-c${i}`))
+        r.style.setProperty(`--c${i}`, rs.getPropertyValue('--original-c1'))
     }
     r.style.setProperty('--c1-secondary', rs.getPropertyValue('--original-c1-secondary'))
 })

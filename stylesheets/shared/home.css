@@ -1,0 +1,110 @@
+@import 'variables.css';
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    position: relative;
+}
+
+.header-container h1 {
+    font-size: 140px;
+    margin-bottom: 0;
+}
+
+.header-container h2 {
+    font-size: 120px;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.header-container span {
+    transition: 200ms;
+}
+
+.header-container h2 span:hover {
+    color: var(--primary-color);
+}
+
+.header-container h1 span:hover {
+    /* animation-name: jump;
+    animation-duration: 1s; */   
+}
+
+/* @keyframes jump { // TODO make the letter move up 15px
+    from {top: 0px}
+    to {color:red; top: 50px;}
+} */
+
+.blob-motion {
+    position: absolute;
+    z-index: 1;
+}
+
+.blob-content {
+    z-index: 1;
+}
+
+.blob .shape-fill {
+    fill: var(--c1-secondary);
+}
+
+.big-color-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: .5rem;
+    margin-bottom: 0;
+}
+
+.color-container svg {
+    width: var(--color-size);
+    height: var(--color-size);
+    margin: 10px 8px;
+}
+
+.color-container rect {
+    width: inherit;
+    height: inherit;
+}
+
+.color-buttons {
+    display: flex;
+}
+
+.color-buttons button {
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 0;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.color-buttons p {
+    font-size: 25px;
+}
+
+#randomize:hover {
+    color: red;
+    animation-name: color-wheel;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-wheel {
+    0% {color: red;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60% {color: green;}
+    80% {color: blue;}
+    100% {color: purple;}
+}
