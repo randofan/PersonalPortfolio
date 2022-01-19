@@ -65,7 +65,8 @@ submit.addEventListener('click', () => {
     let sequence = document.getElementsByName('test')[0].value
     if (sequence.search(/[^a-zA-z]+/) === -1) {
 		if (sequence.length === 16) {
-			loader.style.display = 'block' // TODO loader does not show up. This happens after the everything below?
+			// loader.style.display = 'block' // TODO loader does not show up. This happens after the everything below?
+			output.innerText = 'Loading...'
 			const board = new Board(sequence.toLowerCase())
 			// var t0 = performance.now()
             findSequence(board)

@@ -20,6 +20,7 @@
 
 #posts {
     position: relative;
+    transition: 200ms;
 }
 
 .blog-container svg {
